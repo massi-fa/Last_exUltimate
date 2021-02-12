@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestisciUtenti">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Cerca utente:"
+        android:textSize="30dp"
+        android:id="@+id/istruzione"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+    <SearchView
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/istruzione"
+        android:background="@drawable/inputborder"
+        android:layout_marginBottom="20dp"
+        android:queryHint="es. massifa"
+        android:id="@+id/ricerca"
+        />
+    <ListView
+        android:layout_below="@+id/ricerca"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/Lista"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Lista"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Indietro"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/back"
+        />
+</RelativeLayout>

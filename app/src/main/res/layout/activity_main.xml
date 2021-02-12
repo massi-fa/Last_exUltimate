@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="Login"
+       android:textSize="40dp"
+       android:textAlignment="center"
+       android:gravity="center_horizontal"
+       android:id="@+id/loginText"
+       />
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginText"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/usernameText"
+       />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/usernameText"
+        android:hint="es. massifa"
+        android:background="@drawable/inputborder"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/usernameEditText"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/usernameEditText"
+        android:id="@+id/passwordText"
+
+        android:text="Password"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/passwordText"
+        android:hint="es. W-il-Palazzo"
+        android:background="@drawable/inputborder"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:id="@+id/passwordEditText"
+        />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="70dp"
+        android:text="Accedi"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:text="Nuovo utente? Registrati!"
+        android:textColor="@color/purple_200"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/linkRegistrazione"
+        />
+
+</RelativeLayout>

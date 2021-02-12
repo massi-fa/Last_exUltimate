@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PswChange">
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Modifica Password"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/ModificaPsw"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ModificaPsw"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Username:"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/usr"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/ModificaPsw"
+        android:layout_toRightOf="@+id/usr"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Usernamesh"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/usrshow"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/usr"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Password:"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/psw"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/usrshow"
+        android:layout_toRightOf="@+id/psw"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="passordsh"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/pswshow"
+        />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/psw"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Nuova Password"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/Nuovapsw"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Nuovapsw"
+        android:inputType="text"
+        android:hint="es: M-il-Palazzo"
+        android:background="@drawable/inputborder"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/editnewpsw"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editnewpsw"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Nuova Password"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/Nuovapswcf"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Nuovapswcf"
+        android:inputType="text"
+        android:background="@drawable/inputborder"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:hint="es: M-il-Palazzo"
+        android:id="@+id/editnewpswcf"
+        />
+
+    <Button
+        android:id="@+id/aggpsw"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editnewpswcf"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Aggiorna Password"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+    <Button
+        android:layout_margin="10dp"
+        android:layout_below="@+id/aggpsw"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Home"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/Home"
+        />
+
+</RelativeLayout>
