@@ -43,7 +43,6 @@ public class GestisciUtenti extends AppCompatActivity {
                 Risultati();
                 return false;
             }
-
             @Override
             public boolean onQueryTextChange(String newText) {
                 searchText=newText;
@@ -57,7 +56,9 @@ public class GestisciUtenti extends AppCompatActivity {
         arrayRicerca.clear();
          for(Utente aux : Registrazione.utenti){
              if(aux.getUsername().contains(searchText)){
-                 arrayRicerca.add(aux);
+                 if(aux.getUsername()!=MainActivity.logged.getUsername()) {
+                     arrayRicerca.add(aux);
+                 }
              }
          }
         AdapterGU adapter = new AdapterGU(this,R.layout.usercontainer,arrayRicerca);

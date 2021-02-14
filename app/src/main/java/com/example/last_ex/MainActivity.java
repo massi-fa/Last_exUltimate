@@ -34,9 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
         Utente admin = new Utente("admin","admin","Cagliari","01-12-1999");
         admin.setAdmin(true);
+
         if(!Registrazione.utenti.contains(admin)){
             Registrazione.utenti.add(admin);
-            utenti.add(new Utente("asso","asso","Cagliari","01-11-1999"));
+            /*utenti.add(new Utente("asso","asso","Cagliari","01-11-1999"));
             utenti.add(new Utente("ale","ale","Pirri","01-10-1999"));
             utenti.add(new Utente("baldo","baldo","Elmas","01-03-1979"));
             utenti.add(new Utente("cri","cri","Sestu","01-12-2000"));
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             utenti.add(new Utente("trutru","trutru","Cagliari","01-01-2003"));
             utenti.add(new Utente("Gamer","Gamer","Elmas","01-12-1999"));
             utenti.add(new Utente("angelo","angelo","Pirri","01-02-1800"));
-
+*/
         }
         login.setOnClickListener(new View.OnClickListener() {
             @Override

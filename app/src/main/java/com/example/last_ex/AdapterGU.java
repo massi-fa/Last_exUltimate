@@ -56,10 +56,7 @@ public class AdapterGU extends ArrayAdapter<Utente>{
             @Override
             public void onClick(View v) {
                 if(!utente.getUsername().equals("admin")){
-                    if(utente.getAdmin()){
-                        utente.setAdmin(false);
-                        button.setBackgroundColor(Color.parseColor("#405fad"));
-                    }else{
+                    if(!utente.getAdmin()){
                         utente.setAdmin(true);
                         button.setBackgroundColor(Color.parseColor("#32a852"));
                     }
